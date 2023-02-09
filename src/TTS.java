@@ -16,6 +16,10 @@ public class TTS {
     public TTS() {
         System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
         VoiceManager voiceManager = VoiceManager.getInstance();
+
+        Voice kevin16 = voiceManager.getVoice("kevin16");
+        kevin16.allocate();
+
     }
 
     public static void main(String[] args) throws Exception {
