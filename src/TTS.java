@@ -12,9 +12,10 @@ import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
 public class TTS {
-    
-    public TTS(){
-        
+
+    public TTS() {
+        System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+        VoiceManager voiceManager = VoiceManager.getInstance();
     }
 
     public static void main(String[] args) throws Exception {
@@ -40,12 +41,13 @@ public class TTS {
         System.out.println(set.toString());
 
         Map<String, Integer> map = new TreeMap<>();
-        
-        map.forEach((a,b) -> {System.out.println(a+" "+b);});
+
+        map.forEach((a, b) -> {
+            System.out.println(a + " " + b);
+        });
 
         System.exit(1312);
 
-        
     }
 
 }
