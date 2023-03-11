@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class ButtonListener implements ActionListener {
-    private static TTS ttsEngine = new TTS();
+    private static VoxicaTTS ttsEngine = new VoxicaTTS();
     private JFrame parent;
 
     public ButtonListener(JFrame parent) {

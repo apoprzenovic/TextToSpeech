@@ -5,12 +5,12 @@ import javax.speech.synthesis.SynthesizerModeDesc;
 import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
-public class TTS {
+public class VoxicaTTS {
 
     private VoiceManager voiceManager;
     private Voice kevin16;
 
-    public TTS() {
+    public VoxicaTTS() {
 
         System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
         voiceManager = VoiceManager.getInstance();
